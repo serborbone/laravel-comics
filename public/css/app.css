@@ -62,6 +62,126 @@
   border-bottom: 4px solid #0282F9;
 }
 
+.jumbotron {
+  min-height: 430px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrap-black {
+  background-color: #1C1C1C;
+}
+
+.container {
+  height: 100%;
+  position: relative;
+}
+
+.title-section {
+  background-color: #0282F9;
+  color: #fff;
+  padding: 7px 20px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: -20px;
+  font-size: 12px;
+}
+
+.wrap-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+.wrap-card .card {
+  width: 200px;
+  margin: 0px 13px 20px 13px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.wrap-card .card .img-wrap {
+  height: 100%;
+  max-height: 200px;
+}
+
+.wrap-card .card .img-wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 0%;
+     object-position: 50% 0%;
+}
+
+.wrap-card .card h3 {
+  font-size: 13px;
+  padding-top: 17px;
+  text-transform: uppercase;
+}
+
+.load-btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.load-btn a {
+  background-color: #0282F9;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 50px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.wrap-blue {
+  background-color: #0282F9;
+  height: 170px;
+}
+
+.main-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.main-bottom ul {
+  display: flex;
+  justify-content: center;
+}
+
+.main-bottom ul li {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin: 0 30px 0 30px;
+}
+
+.main-bottom ul li .li-img {
+  height: 100%;
+}
+
+.main-bottom ul li .li-img img {
+  height: 100%;
+}
+
+.main-bottom ul li a {
+  text-decoration: none;
+  margin-left: 15px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .footer-wrap {
   height: 400px;
   background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);

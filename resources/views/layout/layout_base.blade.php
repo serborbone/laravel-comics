@@ -18,7 +18,8 @@
       <!-- HEADER -->
       @include('partials.header')
       
-      
+      <!-- MAIN -->
+      @include('partials.main')
 
       <!-- FOOTER -->
       @include('partials.footer')

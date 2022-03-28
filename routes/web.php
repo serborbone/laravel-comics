@@ -14,9 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
+    return view('layout.layout_base');
 });
 
-/*Route::get('/', function() {
-    return 'La mia homepage';
-});*/
+
+Route::get('/comics', function () {
+
+    $comics = config('comics');
+
+ 
+
+    return view('partials.comics');
+});
