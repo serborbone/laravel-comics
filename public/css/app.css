@@ -1,6 +1,174 @@
-* {
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);* {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 70%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 120px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-header {
+  height: 80px;
+}
+
+.logo-header img {
+  height: 100%;
+}
+
+.menu-header {
+  height: 100%;
+  font-size: 14px;
+}
+
+.menu-header ul {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  height: 100%;
+}
+
+.menu-header ul li {
+  height: 100%;
+  padding: 0 13px 0 13px;
+}
+
+.menu-header ul li a {
+  padding: 0 3px 0 3px;
+  text-decoration: none;
+  color: #1C1C1C;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.menu-header ul li a:hover {
+  color: #0282F9;
+  border-bottom: 4px solid #0282F9;
+}
+
+.footer-wrap {
+  height: 400px;
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-size: cover;
+  display: flex;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* SEZIONE DI SINISTRA CON MENU */
+
+.left {
+  display: flex;
+  width: 50%;
+}
+
+.left ul {
+  margin-right: 25px;
+}
+
+.left ul h4 {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 0 15px 0;
+  font-size: 18px;
+}
+
+.left ul li {
+  padding-bottom: 4px;
+  list-style: none;
+}
+
+.left ul li a {
+  text-decoration: none;
+  color: #787878;
+  font-size: 13px;
+}
+
+.left ul li a:hover {
+  color: #0282F9;
+}
+
+.right {
+  background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 50%;
+}
+
+.footer-bar {
+  height: 100px;
+  background-color: #303030;
+}
+
+.footer-bar .signup-foot {
+  text-transform: uppercase;
+}
+
+.footer-bar .signup-foot a {
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #0282F9;
+  transition: background-color 0.3s;
+}
+
+.footer-bar .signup-foot a:hover {
+  background-color: #0282F9;
+}
+
+.footer-bar .social-group {
+  display: flex;
+  align-items: center;
+}
+
+.footer-bar .social-group h3 {
+  text-transform: uppercase;
+  color: #0282F9;
+  margin-right: 18px;
+}
+
+.footer-bar .social-group ul {
+  display: flex;
+  list-style: none;
+}
+
+.footer-bar .social-group ul li {
+  margin: 0 9px 0 9px;
+}
+
+.footer-bar .social-group ul a {
+  font-size: 22px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6A6A6A;
+  text-decoration: none;
+  color: #303030;
 }
 

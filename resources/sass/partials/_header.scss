@@ -1,0 +1,52 @@
+@import "./variables";
+
+.header {
+      height: 120px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }  
+
+    .logo-header {
+      height: 80px;
+      
+      img {
+        height: 100%;
+      }
+    }
+
+    .menu-header {
+      height: 100%;
+      font-size: 14px;
+      
+        ul {
+        display: flex;
+        list-style: none;
+        text-transform: uppercase;
+        height: 100%;
+
+          li {
+          height: 100%;
+          padding: 0 13px 0 13px;
+
+            a {
+              padding: 0 3px 0 3px;
+              text-decoration: none;
+              color: #1C1C1C;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              box-sizing: border-box;
+
+              &:hover {
+                color: $blue-color;
+                border-bottom: 4px solid $blue-color;
+              }
+            }
+          }
+        }
+      }
