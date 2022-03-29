@@ -56,11 +56,11 @@
                 <span class="label-com">Art by:</span>
 
                 <div class="artist-section">
-                  <a href="#">Josè Luis Garcia-Lopez</a>
-                  <a href="#">Josè Luis Garcia-Lopez</a>
-                  <a href="#">Josè Luis Garcia-Lopez</a>
-                  <a href="#">Josè Luis Garcia-Lopez</a>
+                  @foreach ($comicsList['artists'] as $artist)                    
+                    <a href="#">{{$artist}}</a>
+                  @endforeach
                 </div>
+
             </div>
             {{-- FINE ROW INFO COLONNA --}}
 
@@ -69,11 +69,9 @@
                 <span class="label-com">Written by:</span>
 
                 <div class="artist-section">
-                  <a href="#">Brad Meltzer</a>
-                  <a href="#">Tom King</a>
-                  <a href="#">Brad Meltzer</a>
-                  <a href="#">Tom King</a>
-                  <a href="#">Josè Luis Garcia-Lopez</a>
+                  @foreach ($comicsList['writers'] as $writer)                    
+                    <a href="#">{{$writer}}</a>
+                  @endforeach
                 </div>
             </div>
             {{-- FINE ROW INFO COLONNA --}}

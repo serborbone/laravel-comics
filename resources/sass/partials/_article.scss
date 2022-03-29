@@ -6,11 +6,12 @@
 .blue-row {
   height: 100px;
   background-color: $blue-color;
+  position: relative;
 }
 
 .article-thumb {
   position: absolute;
-  bottom: 115px;
+  bottom: 215px;
   border: 1px solid #fff;
   cursor: pointer;
 }
