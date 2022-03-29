@@ -7,7 +7,7 @@
       @yield('content')
 
       <div class="wrap-blue">
-        <div class="container">
+        <div class="container-b-b">
             <div class="main-bottom">
                 <!-- LISTA LINK -->
                 <ul>
