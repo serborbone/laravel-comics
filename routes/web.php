@@ -19,5 +19,5 @@ Route::get('/', function () {
 
     //dump($comics);
 
-    return view('partials.comics', compact('comics'));
-})->name('comics');
+    return view('partials.article', compact('comics')); 
+})->name('comics'); /////********CAMBIARE ARTICLE CON COMICS**********
