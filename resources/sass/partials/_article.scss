@@ -1,18 +1,29 @@
+.container-article {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .blue-row {
   height: 100px;
   background-color: $blue-color;
 }
 
-.container-article {
-  width: 50%;
-  margin: 0 auto;
-  height: 300px;
+.article-thumb {
+  position: absolute;
+  bottom: 115px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.res-flex {
+  display: flex;
 }
 
 .comic-info {
   height: 100%;
   width: 70%;
-  padding-top: 40px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 
   .art-title {
     text-transform: uppercase;
@@ -71,3 +82,53 @@
 
 }
 
+.adv-col {
+  padding-top: 70px;
+  padding-left: 35px;
+
+  .adv-title {
+    text-align: right;
+    font-size: 0.75em;
+    color: #555555;
+    margin-bottom: 5px;
+  }
+}
+
+.wrap-grey {
+  background-color: #f6f6f6;
+  height: 500px;
+  border-top: 1px solid #d6d6d6;
+}
+
+.comic-info-cols {
+  width: 50%;
+  color: #003f5e;
+  font-size: 0.85em;
+  padding-top: 30px;
+
+  .com-title {
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 35px;
+  }
+
+  .data-comics-row {
+    padding: 12px 0;
+    display: flex;
+    border-bottom: 1px solid #d6d6d6;
+
+    .label-com {
+      width: 30%;
+    }
+    .artist-section, .specs-data-sect {
+      width: 70%;
+      a {
+        text-decoration: none;
+        color: $blue-color;
+      }
+    }
+  }
+}
+
+.specs-col {
+  padding-left: 60px;
+}

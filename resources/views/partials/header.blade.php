@@ -7,7 +7,7 @@
 
             <!-- LOGO HEADER -->
             <div class="logo-header">
-                <img src="img/dc-logo.png" alt="Logo DC Comics">
+                <img src="{{ asset('img/dc-logo.png') }}" alt="Logo DC Comics">
             </div>
 
             <!-- MENU HEADER -->

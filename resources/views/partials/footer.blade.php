@@ -66,20 +66,19 @@
                 
                 <ul>                    
                     <li>
-                      <a href=""><img src="img/footer-facebook.png"></a>
+                      <a href=""><img src="{{ asset('img/footer-facebook.png') }}"></a>
                     </li>
                     <li>
-                      <a href=""><img src="img/footer-twitter.png"></a>
+                      <a href=""><img src="{{ asset('img/footer-twitter.png') }}"></a>
                     </li>
                     <li>
-                      <a href=""><img src="img/footer-youtube.png"></a>
+                      <a href=""><img src="{{ asset('img/footer-youtube.png') }}"></a>
                     </li>
                     <li>
-                      <a href=""><img src="img/footer-pinterest.png"></a>
+                      <a href=""><img src="{{ asset('img/footer-pinterest.png') }}"></a>
                     </li>
-                    
                     <li>
-                      <a href=""><img src="img/footer-periscope.png"></a>
+                      <a href=""><img src="{{ asset('img/footer-periscope.png') }}"></a>
                     </li>
                 </ul>
             </div>

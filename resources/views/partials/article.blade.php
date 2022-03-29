@@ -2,18 +2,25 @@
 
 @section('article')
   <div class="blue-row">
+
+    <div class="container-article">
+        <div class="article-thumb">
+          <img src="{{$comicsList['thumb']}}">
+        </div>
+    </div>
+
   </div>
 
-  <div class="container-article comic-resume">
+  <div class="container-article res-flex">
 
     <div class="comic-info">
-        <h2 class="art-title">Action Comics #1000: The Deluxe Edition</h2>
+        <h1 class="art-title">{{$comicsList['title']}}</h1>
       
         <!-- PRICE AVAILABILITY ROW -->
         <div class="availability">
 
             <div class="price-status">
-              U.S. Price: <span class="price-comic">$19.99</span>
+              U.S. Price: <span class="price-comic">{{$comicsList['price']}}</span>
             </div>
 
             <div class="check-av">
@@ -25,21 +32,90 @@
 
         <!-- COMIC INFO TEXT -->
 
-        <p class="comic-txt-info">The celebration of 1,000 issues of Action Comics continues with 
-          a new, Deluxe Edition of the amazing comic that won raves when it
-          hit comics shops in April! This hardcover includes all the 
-          stories from that issue, plus the tale by writer Paul Levitz 
-          and artist Neal Adams that appeared in the Action Comics: 80 Years Of Superman hardcover, as well as all the variant 
-          covers, design sketches by Jim Lee for Superman’s new look, scripts 
-          for the stories, the original art from the lost story featuring art by Curt Swan and more! 
-          Plus: a complete reprint of the stories that started it all—the Superman stories Action Comics #1 and 2 from 1938!
-        </p>
+        <p class="comic-txt-info">{{$comicsList['description']}}</p>
 
     </div>
 
-    <div class="adv">
-      img
+    <div class="adv-col">
+      <h2 class="adv-title">ADVERTISEMENT</h2>
+      <a href="#">
+        <img src="{{ asset('img/adv.jpg') }}">
+      </a>
     </div>
 
   </div>
+
+  <div class="wrap-grey"> 
+    <div class="container-article res-flex">
+
+        <div class="talent-col comic-info-cols">
+            <h2 class="com-title">Talent</h2>
+
+            {{-- ROW INFO COLONNA --}}
+            <div class="data-comics-row">
+                <span class="label-com">Art by:</span>
+
+                <div class="artist-section">
+                  <a href="#">Josè Luis Garcia-Lopez</a>
+                  <a href="#">Josè Luis Garcia-Lopez</a>
+                  <a href="#">Josè Luis Garcia-Lopez</a>
+                  <a href="#">Josè Luis Garcia-Lopez</a>
+                </div>
+            </div>
+            {{-- FINE ROW INFO COLONNA --}}
+
+            {{-- ROW INFO COLONNA --}}
+            <div class="data-comics-row">
+                <span class="label-com">Written by:</span>
+
+                <div class="artist-section">
+                  <a href="#">Brad Meltzer</a>
+                  <a href="#">Tom King</a>
+                  <a href="#">Brad Meltzer</a>
+                  <a href="#">Tom King</a>
+                  <a href="#">Josè Luis Garcia-Lopez</a>
+                </div>
+            </div>
+            {{-- FINE ROW INFO COLONNA --}}
+
+        </div>
+
+        {{-- SPECS COLONNA --}}
+        <div class="specs-col comic-info-cols">
+            <h2 class="com-title">Specs</h2>
+
+            {{-- Row info col --}}
+            <div class="data-comics-row">
+                <span class="label-com">Series:</span>
+
+                <div class="specs-data-sect">
+                  <a href="#">{{$comicsList['series']}}</a>
+                </div>
+            </div>
+            {{-- FINE ROW INFO COLONNA --}}
+
+            {{-- ROW INFO COLONNA --}}
+            <div class="data-comics-row">
+                <span class="label-com">U.S. Price:</span>
+
+                <div class="specs-data-sect">
+                  <span>{{$comicsList['price']}}</span>
+                </div>
+            </div>
+            {{-- FINE ROW INFO COLONNA --}}
+
+            {{-- ROW INFO COLONNA --}}
+            <div class="data-comics-row">
+                <span class="label-com">On Sale Date:</span>
+
+                <div class="specs-data-sect">
+                  <span>{{$comicsList['sale_date']}}</span>
+                </div>
+            </div>
+            {{-- FINE ROW INFO COLONNA --}}
+        </div>
+
+    </div>
+  </div>
+
 @endsection

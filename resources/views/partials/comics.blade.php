@@ -9,10 +9,10 @@
               </div>
               
               <div class="wrap-card">
-                @foreach ($comics as $singlecomic)                      
+                @foreach ($comics as $key => $singlecomic)                      
                   <div class="card">
                       <div class="img-wrap">
-                          <a href="#">
+                          <a href="{{route('article', ['id_comics' => $key])}}">
                               <img src="{{$singlecomic['thumb']}}">
                           </a>
                       </div>

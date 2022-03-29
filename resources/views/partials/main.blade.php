@@ -4,9 +4,8 @@
         <!-- JUMBOTRON IMG -->
       </div>
 
-
-      <!--@ yield('comics')-->
+      @yield('comics')
 
       @yield('article')
-
+      
 </section>
